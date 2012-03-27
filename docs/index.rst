@@ -9,7 +9,21 @@ Welcome to BYcms's documentation!
 Contents:
 
 .. toctree::
+   endpoints
+
    :maxdepth: 2
+
+API Endpoints
+=============
+/insert/:id/:title/:desc
+
+/find/:id
+
+/admin/find/:id
+
+
+
+
 
 Indices and tables
 ==================

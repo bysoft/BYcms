@@ -1,1 +1,1 @@
-Search.setIndex({objects:{},terms:{index:0,search:0,welcom:0,modul:0,indic:0,content:0,bycm:0,tabl:0,document:0,page:0},objtypes:{},titles:["Welcome to BYcms&#8217;s documentation!"],objnames:{},filenames:["index"]})
+Search.setIndex({objects:{},terms:{index:[0,1],search:[0,1],endpoint:[0,1],welcom:0,insert:[0,1],admin:[0,1],titl:[0,1],modul:[0,1],api:[0,1],find:[0,1],indic:0,method:1,content:0,bycm:0,tabl:0,document:0,page:[0,1],desc:[0,1]},objtypes:{},titles:["Welcome to BYcms&#8217;s documentation!","API Endpoints and Methods"],objnames:{},filenames:["index","endpoints"]})
