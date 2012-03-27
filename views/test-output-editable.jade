@@ -1,0 +1,14 @@
+h1= title
+#login_panel
+	form(action='/',method='POST')
+		.login_fields
+			.field
+				label(for='email')
+				input#email(name='email',type='text',placeholder='email@example.com')Email
+			.field
+				label(for='password')
+					small
+						forgot password?
+		.login_actions
+			button(type='submit',class='btn.btn-primary',tabindex='1')		
+
