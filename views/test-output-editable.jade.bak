@@ -1,0 +1,84 @@
+
+#wrapper
+	#header
+		h1 
+			a(src='dashboard.html') Canvas Admin
+
+			a(id='reveal-nav')
+				span.reveal-bar
+				span.reveal-bar
+				span.reveal-bar
+	#search
+		form
+			input(type='text',name='search')
+
+	#sidebar
+		ul#mainNav
+			li#navDashboard.nav.active
+				span.icon-home
+				a(href='dashboard.html') Dashboard
+			li#navPages.nav
+				span.icon-document-alt-stroke
+				a Sample Pages
+
+				ul.subNav
+					li
+						a(href='invoice.html') Invoice
+					li
+						a(href='support.html') Support
+					li
+						a(href='people.html') People Directory
+
+			li#navForms.nav
+				span.icon-article
+				a Form Elements
+				ul.subNav
+					li
+						a(href='forms.html') Layouts & Elements
+					li
+						a(href='form-validations.html') Validations
+			li#navType.nav
+				span.icon-info
+				a(href='typography.html') Typography
+			li#navGrid.nav
+				span.icon-layers
+				a(href='grids.html') Grid Layout
+			li#navTables.nav
+				span.icon-list
+				a(href='tables.html') Tables
+			li#navButtons.nav
+				span.icon-compass
+				a(href='buttons.html') Buttons & Icons
+	#content
+		#contentHeader
+			h1 Dashboard
+		#container
+			.grid-24
+				.widget.widget-plain
+					.widget-content
+						h2.dashboard_title Weekly Sales Stats
+						.dashboard_report.first.activeState
+							.pad
+								span.value 786 
+								Completed Sales
+						.dashboard_report.defaultState
+							.pad
+								span.value 347
+								Pending Sales
+						.dashboard_report.defaultState
+							.pad
+								span.value 118
+								Pending Sales
+						.dashboard_report.defaultState
+							.pad
+								span.value 45
+								Returned Items
+				.widget.widget-tabs
+					.widget-header
+						span.icon-chart
+						h3 Charts
+						ul.tabs.right
+							li.active
+								a(href='#yearly') yearly
+							li
+								a(href='#monthly') Monthly
