@@ -1,14 +1,85 @@
-h1= title
-#login_panel
-	form(action='/',method='POST')
-		.login_fields
-			.field
-				label(for='email')
-				input#email(name='email',type='text',placeholder='email@example.com')Email
-			.field
-				label(for='password')
-					small
-						forgot password?
-		.login_actions
-			button(type='submit',class='btn.btn-primary',tabindex='1')		
 
+#wrapper
+	#header
+		h1 
+			a(src='dashboard.html') BYcms
+
+			a(id='reveal-nav')
+				span.reveal-bar
+				span.reveal-bar
+				span.reveal-bar
+	#search
+		form
+			input(type='text',name='search')
+
+	#sidebar
+		ul#mainNav
+			li#navDashboard.nav.active
+				span.icon-home
+				a(href='dashboard.html') Dashboard
+			li#navPages.nav
+				span.icon-document-alt-stroke
+				a Sample Pages
+
+				ul.subNav
+					li
+						a(href='invoice.html') Invoice
+					li
+						a(href='support.html') Support
+					li
+						a(href='people.html') People Directory
+
+			li#navForms.nav
+				span.icon-article
+				a Form Elements
+				ul.subNav
+					li
+						a(href='forms.html') Layouts & Elements
+					li
+						a(href='form-validations.html') Validations
+			li#navType.nav
+				span.icon-info
+				a(href='typography.html') Typography
+			li#navGrid.nav
+				span.icon-layers
+				a(href='grids.html') Grid Layout
+			li#navTables.nav
+				span.icon-list
+				a(href='tables.html') Tables
+			li#navButtons.nav
+				span.icon-compass
+				a(href='buttons.html') Buttons & Icons
+	#content
+		#contentHeader
+			h1 Dashboard
+		#container
+			.grid-17
+			.grid-7
+				.box
+					h1 Page id #{docId}
+					div
+						input(value='#{title}')
+					div
+						textarea #{content}
+					
+	#topNav
+		ul
+			li
+				a.menu(href='#menuProfile') Brian
+					.menu-arrow
+			li
+				a(href='#upgrade') upgrade
+			li
+				a(href='/') Logout
+
+#menuProfile.menu-container.menu-dropdown.menu-type-topnav
+	.menu-content
+		ul
+			li
+				a(href='#editProfile') Edit Profile
+			li
+				a(href='#editSettings') Edit Settings
+	.menu-top
+#footer
+	Copyright @ 2012, BYcms
+script(src='/javascripts/all.js')
